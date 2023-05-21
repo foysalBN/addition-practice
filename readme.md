@@ -15,4 +15,3 @@ remove the next button. no need to click on next button. a new addition will app
 
 5. Did some personal changes here & there
 ![Alt text](./ss/3.png)
-
