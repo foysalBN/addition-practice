@@ -7,23 +7,31 @@
 </head>
 
 <body>
-    <h1>Math Addition Practice</h1>
+    <div class="container">
+        <h1>Math Addition Practice</h1>
 
-    <label for="digitCount">Select Digit Count:</label>
-    <select id="digitCount">
-        <option value="1">Single Digit</option>
-        <option value="2">Two Digits</option>
-        <option value="3">Three Digits</option>
-    </select>
+        <div class="options">
+            <label for="digitCount">Select Digit Count:</label>
+            <select id="digitCount">
+                <option value="1">Single Digit</option>
+                <option value="2">Two Digits</option>
+                <option value="3">Three Digits</option>
+            </select>
 
-    <button id="startButton">Start</button>
+            <button id="startButton">Start</button>
+        </div>
 
-    <div id="questionContainer" class="hidden">
-        <h2 id="question"></h2>
-        <input type="text" id="answer" placeholder="Enter your answer">
-        <button id="checkButton">Check</button>
-        <aside id="resultStack"></aside>
+        <div id="questionContainer" class="hidden">
+            <h2 id="question"></h2>
+            <input type="text" id="answer" placeholder="Enter your answer">
+            <button id="checkButton">Check</button>
+        </div>
     </div>
+
+    <aside id="resultSidebar">
+        <h2>Results</h2>
+        <div id="resultStack"></div>
+    </aside>
 
     <script src="script.js"></script>
 </body>

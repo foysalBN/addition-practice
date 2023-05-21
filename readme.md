@@ -10,5 +10,9 @@
 remove the next button. no need to click on next button. a new addition will appear after every submit 
 3. please add some modern webpage style in it
 **Result:** 
-![Alt text](./ss/2.png)
+![by chatGPT](./ss/2.png)
+4. instead of adding the result list in bottom, place this in right side. title the sidebar a Result. add some style on sidebar. add some colours to see some visual difference between correct & incorrect answer. also add my answer and correct answer if not correct
+
+5. Did some personal changes here & there
+![Alt text](./ss/3.png)
 

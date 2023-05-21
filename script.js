@@ -30,10 +30,27 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkAnswer() {
         var userAnswer = parseInt(answerInput.value);
         var isCorrect = userAnswer === correctAnswer;
-        var resultText = document.createElement("p");
-        resultText.textContent = question.textContent + " " + (isCorrect ? "Correct!" : "Incorrect");
-        resultStack.prepend(resultText);
-        resultStack.scrollTop = 0;
+        var resultText = document.createElement("div");
+        resultText.classList.add("resultItem");
+        resultText.classList.add(isCorrect ? "correct" : "incorrect");
+
+        var equationText = document.createElement("p");
+        equationText.textContent = question.textContent + userAnswer + " Correct ";
+        resultText.appendChild(equationText);
+
+        if (!isCorrect) {
+            var correctAnswerText = document.createElement("p");
+            correctAnswerText.classList.add("correctAnswer");
+            correctAnswerText.textContent = "Correct Answer: " + correctAnswer;
+            resultText.appendChild(correctAnswerText);
+
+            var myAnswerText = document.createElement("p");
+            myAnswerText.classList.add("myAnswer");
+            myAnswerText.textContent = "Your Answer: " + userAnswer;
+            resultText.appendChild(myAnswerText);
+        }
+
+        resultStack.insertBefore(resultText, resultStack.firstChild);
         answerInput.value = "";
         generateQuestion();
     }
