@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Addition Practice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Math Addition Practice</h1>
+
+    <label for="digitCount">Select Digit Count:</label>
+    <select id="digitCount">
+        <option value="1">Single Digit</option>
+        <option value="2">Two Digits</option>
+        <option value="3">Three Digits</option>
+    </select>
+
+    <button id="startButton">Start</button>
+
+    <div id="questionContainer" class="hidden">
+        <h2 id="question"></h2>
+        <input type="text" id="answer" placeholder="Enter your answer">
+        <button id="checkButton">Check</button>
+        <aside id="resultStack"></aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
